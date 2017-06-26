@@ -25,7 +25,7 @@ class App extends React.Component {
             contentType: "application/x-www-form-urlencoded",
             headers: {"Authorization" : "Basic bXNpLWNsaWVudDptc2ktc2VjcmV0"},
             dataType:"json",
-            data: JSON.stringify({"grant_type": "client_credentials"}),
+            data: {"grant_type": "client_credentials"},
             success: (response) => {
                 alert("Got token response");
             },
